@@ -5,4 +5,5 @@ module com.mycompany {
     opens com.mycompany to javafx.fxml;
     exports com.mycompany;
     requires org.mongodb.driver.core;
+    requires java.base;
 }
