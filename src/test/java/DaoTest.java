@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
 
+import com.Dao;
+import com.Usuario;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,8 +17,11 @@ public class DaoTest {
     public DaoTest(){
     }
 
-    @org.junit.jupiter.api.Test
-    public void testSomeMethod() {
-    }
+//    @Test
+//    public void testInserirUsuario() {
+//        Usuario v = new Usuario("B1", "Vaquinha", "Holandesa");
+//        Dao<Usuario> dao = new Dao(Usuario.class);
+//        dao.inserir(v);    
+//    }
     
 }
