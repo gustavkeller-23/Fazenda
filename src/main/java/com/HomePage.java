@@ -1,7 +1,7 @@
 package com;
 
-import com.App;
 import java.io.IOException;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -35,9 +35,19 @@ public class HomePage {
         vaca.setRaca(RacaVaca.getText());
         dao.inserir(vaca);
     }
+
+    @FXML
+    private void alterarVaca() {
+        
+    }
+
+    @FXML
+    private void removerVaca() {
+        
+    }
     
     @FXML
-    private void cancelarCadastro(){
+    private void limparCadastro(){
         Brinco.setText("");
         NomeVaca.setText("");
         RacaVaca.setText("");
