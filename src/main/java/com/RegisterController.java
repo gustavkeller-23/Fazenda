@@ -46,11 +46,13 @@ public class RegisterController{
 
     @FXML
     private void concluirCadastro() throws IOException {
-        if(getSenha().equals(getConfirmarSenha())){
+        if(getSenha().equals(getConfirmarSenha()) &&
+           !dao.buscarPorChave("Login:", Login.getText())){
             Usuario usuario = new Usuario();
             usuario.setLogin(Login.getText());
             usuario.setSenha(Senha.getText());
             usuario.setNome(Nome.getText());
+            usuario.set
             dao.inserir(usuario);
             
             limparTextos();
