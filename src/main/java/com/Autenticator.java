@@ -1,7 +1,7 @@
 package com;
 
-import com.App;
 import java.io.IOException;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -13,6 +13,13 @@ public class Autenticator {
     @FXML
     private TextField Senha;
     
+    Dao<Usuario> dao;
+
+    @FXML
+    public void initialize() {
+        dao = new Dao(Usuario.class);
+    }
+
     @FXML
     private void TelaCadastro() throws IOException {
         App.setRoot("Register");
@@ -21,7 +28,10 @@ public class Autenticator {
     
     @FXML
     private void TelaMenu() throws IOException {
-        App.setRoot("Home");
+        Usuario user = dao.buscarPorChave("login", Login.getText());
+        if(user != null && Senha.getText().equals(user.getSenha())){
+            App.setRoot("Home");
+        }
         limparEspacos();
     }
     

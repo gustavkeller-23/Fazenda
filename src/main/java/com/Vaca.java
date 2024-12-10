@@ -3,9 +3,6 @@ package com;
 import org.bson.codecs.pojo.annotations.BsonProperty;
 
 public class Vaca  {
-
-    @BsonProperty(value="userCode") // unico para cada vaca 
-    private String userCode;
     
     @BsonProperty(value="brinco") // unico para cada vaca 
     private String brinco;

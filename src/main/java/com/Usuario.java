@@ -2,11 +2,7 @@ package com;
 
 import org.bson.codecs.pojo.annotations.BsonProperty;
 
-
 public class Usuario {
-
-    @BsonProperty(value="code")
-    private String Code;
 
     @BsonProperty(value="login")
     private String Login;
@@ -24,16 +20,9 @@ public class Usuario {
         this.Login = Login;
         this.Nome = Nome;
         this.Senha = Senha;
-        //Code = Code++;
     }
     
-    public String getCode(){
-        return Code;
-    }
-    public void setLogin(String Code){
-        this.Code = Code;
-    }
-    
+
     public String getLogin(){
         return Login;
     }

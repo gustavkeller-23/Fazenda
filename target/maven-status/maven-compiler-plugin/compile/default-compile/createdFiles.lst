@@ -1,4 +1,5 @@
 com\Autenticator.class
+com\Producao.class
 com\RegisterController.class
 com\Usuario.class
 com\App.class

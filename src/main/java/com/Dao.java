@@ -1,5 +1,12 @@
 package com;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.bson.Document;
+import org.bson.codecs.configuration.CodecRegistry;
+import org.bson.codecs.pojo.PojoCodecProvider;
+
 import com.mongodb.MongoClientSettings;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
@@ -7,11 +14,6 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.result.DeleteResult;
-import java.util.ArrayList;
-import java.util.List;
-import org.bson.Document;
-import org.bson.codecs.configuration.CodecRegistry;
-import org.bson.codecs.pojo.PojoCodecProvider;
 
 /**
  * Classe responsável pela persistência de objetos. 
@@ -57,7 +59,7 @@ public class Dao <T> {
          T retorno = collection.find(new Document(chave, valor)).first();
          return retorno;
     }
-    
+      
     public void inserir(T objeto){       
         collection.insertOne(objeto); 
     }
