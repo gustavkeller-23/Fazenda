@@ -6,11 +6,11 @@ public class Producao {
 
     private Vaca vaca;
     private LocalDate data;
-    private double quantidade;
+    private String quantidade;
     
     public Producao(){}
 
-    public Producao(Vaca vaca, LocalDate data, double quantidade) {
+    public Producao(Vaca vaca, LocalDate data, String quantidade) {
         this.vaca = vaca;
         this.data = data;
         this.quantidade = quantidade;
@@ -32,11 +32,11 @@ public class Producao {
         this.data = data;
     }
 
-    public double getQuantidade() {
+    public String getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(double quantidade) {
+    public void setQuantidade(String quantidade) {
         this.quantidade = quantidade;
     }
     

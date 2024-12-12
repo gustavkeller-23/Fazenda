@@ -6,3 +6,4 @@ com\App.class
 com\HomePage.class
 com\Vaca.class
 com\Dao.class
+com\UsuarioAuth.class

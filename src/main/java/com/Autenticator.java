@@ -30,6 +30,7 @@ public class Autenticator {
     private void TelaMenu() throws IOException {
         Usuario user = dao.buscarPorChave("login", Login.getText());
         if(user != null && Senha.getText().equals(user.getSenha())){
+            UsuarioAuth usuario = new UsuarioAuth(user);
             App.setRoot("Home");
         }
         limparEspacos();
