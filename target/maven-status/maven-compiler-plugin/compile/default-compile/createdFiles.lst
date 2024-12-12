@@ -1,0 +1,9 @@
+com\Autenticator.class
+com\Producao.class
+com\RegisterController.class
+com\Usuario.class
+com\App.class
+com\HomePage.class
+com\Vaca.class
+com\Dao.class
+com\UsuarioAuth.class
